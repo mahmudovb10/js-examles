@@ -205,3 +205,83 @@
 // }
 
 // console.log(`Yig'indi S = ${S}`);
+
+// For15. N va K butun sonlari berilgan. Quyidagi yig'indini chiqaruvchi programma tuzilsin.
+// S = 1^K + 2^K + ... + N^K
+
+// let n = 5;
+// let k = 2;
+// let s = 0;
+
+// for (let i = 1; i <= n; i++) {
+//   s += i ** K;
+// }
+
+// console.log("S =", S);
+
+// For16. N butun soni berilgan. Quyidagi yig'indini chiqaruvchi programma tuzilsin.
+// S = 1^1 + 2^2 + … + N^N
+
+// let n = 10;
+// let s = 0;
+// for (let i = 1; i <= n; i++) {
+//   s += i ** n;
+//   console.log("S =", s);
+// }
+
+// For17. A va B butun soni berilgan (A < B). A va B sonlari orasidagi barcha butun sonlarni chiqaruvchi programma tuzilsin. Bunda A soni 1 marta, (A + 1) soni 2 marta chiqariladi va xokazo.
+
+// let A = 2;
+// let B = 6;
+
+// for (let i = A; i < B; i++) {
+//   console.log((i + " ").repeat(i - A + 1).trim());
+// }
+
+// For18. Sonning barcha bo’luvchilarini, ularning sonini va yig’indisini chiqaruvchi dastur tuzing.
+
+// let n = 36;
+// let count = 0;
+// let sum = 0;
+
+// for (let i = 1; i <= n; i++) {
+//   if (n % i === 0) {
+//     console.log(i);
+//     count++;
+//     sum += i;
+//   }
+// }
+
+// console.log("Bo‘luvchilar soni:", count);
+// console.log("Yig'indisi:", sum);
+
+// For19. n butun soni berilgan (n > 1). N sonini tub yoki tub emasligini aniqlovchi programma tuzilsin.
+
+// let n = 17;
+// let tub = true;
+
+// for (let i = 2; i < n; i++) {
+//   if (n % i === 0) {
+//     tub = false;
+//     break;
+//   }
+// }
+
+// console.log(tub ? n + " tub son." : n + " tub son emas.");
+
+// For20. Sonlarni quyidagi tartibda chiqaruvchi dastur tuzing. N = 5 bo’lganda,
+// 1
+// 1 2
+// 1 2 3
+// 1 2 3 4
+// 1 2 3 4 5
+
+// let N = 5;
+
+// for (let i = 1; i <= N; i++) {
+//   let line = "";
+//   for (let j = 1; j <= i; j++) {
+//     line += j + " ";
+//   }
+//   console.log(line.trim());
+// }
